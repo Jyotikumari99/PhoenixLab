@@ -1,0 +1,71 @@
+.ap {
+  height: 35rem;
+  background-attachment: local;
+  background-image: url("../images/pexels-alesia-kozik-6777570.jpg");
+  background-size: cover;
+  /* background-position: 120px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 11rem; */
+  color: aliceblue;
+}
+
+.ap h1 {
+  font-size: 4rem;
+  margin-top: 3rem;
+  text-shadow: 2px 3px 4px black;
+}
+
+.pages {
+  margin-bottom: 2rem;
+  height: 20rem;
+}
+
+.pages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: -4rem;
+}
+
+.pages img {
+  width: 61%;
+  border-radius: 12px;
+}
+
+.pages p {
+  margin: 0rem -6rem;
+}
+
+.gpo {
+  height: 40rem;
+}
+
+.gpo .imo {
+  border: 2px solid black;
+  height: 30rem;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: lightsalmon;
+  background-size: cover;
+  color: white;
+}
+
+@media (max-width: 420px) {
+  .pages {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 3rem;
+  }
+
+  .pages p {
+    margin: 2rem;
+  }
+}
