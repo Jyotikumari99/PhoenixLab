@@ -1,5 +1,4 @@
-import "../styles/Style.css";
-import "../styles/ModelEvaluation.css";
+
 import logo from "../images/logo.png";
 
 const ModelEvaluation = () => {

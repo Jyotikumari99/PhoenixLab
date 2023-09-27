@@ -1,4 +1,4 @@
-import "../styles/Home.css";
+
 import logo from "../images/logo.png";
 const Vision = () => {
   return (

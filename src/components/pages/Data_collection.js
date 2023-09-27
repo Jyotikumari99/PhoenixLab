@@ -1,4 +1,4 @@
-import "../styles/Data_collection.css";
+
 import logo from "../images/logo.png";
 
 const Data_collection = () => {

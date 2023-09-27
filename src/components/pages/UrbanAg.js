@@ -1,6 +1,6 @@
-import "../styles/Style.css";
+
 import logo from "../images/logo.png";
-import "../styles/UrbanAg.css";
+
 
 const UrbanAg = () => {
   return (

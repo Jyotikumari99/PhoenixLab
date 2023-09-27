@@ -1,4 +1,4 @@
-import "../styles/Data_preparation.css";
+
 import logo from "../images/logo.png";
 
 const Data_preparation = () => {

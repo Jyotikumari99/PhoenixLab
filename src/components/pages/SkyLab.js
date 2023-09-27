@@ -1,6 +1,6 @@
-import "../styles/Style.css";
+
 import logo from "../images/logo.png";
-import "../styles/SkyLab.css";
+
 const SkyLab = () => {
   return (
     <div>

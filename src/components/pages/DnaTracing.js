@@ -1,6 +1,5 @@
-import "../styles/Style.css";
+
 import logo from "../images/logo.png";
-import "../styles/DnaTracing.css";
 
 const DnaTracing = () => {
   return (
