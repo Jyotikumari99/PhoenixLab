@@ -1,0 +1,63 @@
+.PrivacyPolicy {
+    background-color: #ffffff;
+}
+.PrivacyPolicy .heading_section {
+    height: 300px;
+    background-color: rgb(255, 0, 100);
+    border-radius: 0px 0px 99% 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.PrivacyPolicy .heading_section > .main_heading {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.PrivacyPolicy .heading_section > .sub_heading {
+    font-size: 1.2rem;
+    display: block;
+}
+.PrivacyPolicy .content_div {
+    height: fit-content;
+}
+.PrivacyPolicy .content_div > .content_card {
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 10px;
+    padding: 3rem;
+}
+.PrivacyPolicy section {
+    margin: 10px 0 5px 0;
+    text-align: justify;
+}
+.PrivacyPolicy .heading {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.PrivacyPolicy .sub_heading {
+    font-weight: 550;
+    font-size: 1.5rem;
+}
+.PrivacyPolicy section a {
+    color: #000000 !important;
+    font-weight: bold;
+}
+.PrivacyPolicy section a:hover {
+    color: #333333 !important;
+}
+@media screen and (max-width: 576px) {
+    .PrivacyPolicy .content_div > .content_card {
+        width: 95%;
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .PrivacyPolicy .content_div > .content_card {
+        width: 90%;
+        padding: 2rem;
+    }
+}

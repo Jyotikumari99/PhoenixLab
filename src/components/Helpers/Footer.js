@@ -15,9 +15,7 @@ const Footer = () => {
                         <a href="/">Company</a>
                         <a href="/">Team</a>
                         <a href="/">Careers</a>
-                        <a href="/" className="unicare">
-                            UniCare® Privacy Policy
-                        </a>
+                        <a href="/privacyPolicy">UniCare® Privacy Policy</a>
                     </div>
                     <div className="col-12 col-md-6 mt-2 mt-sm-1 mt-md-0">
                         <p className="text-white heading">Phoenix Labs</p>

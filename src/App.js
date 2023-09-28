@@ -7,6 +7,7 @@ import Art from "./components/pages/Art";
 import CryptoTechnologyCenter from "./components/pages/CryptoTechnologyCenter";
 import Web from "./components/pages/Web";
 import Projects from "./components/pages/Projects";
+import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 // import AiLabs from "./components/pages/AiLabs";
 // import Data_collection from "./components/pages/Data_collection";
 // import Data_preparation from "./components/pages/Data_preparation";
@@ -24,7 +25,6 @@ import Projects from "./components/pages/Projects";
 // import IoLab from "./components/pages/IoLab";
 // import GLab from "./components/pages/GLab";
 // import XLab from "./components/pages/XLab";
-// import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import "./styles/App.css";
 
 function App() {
@@ -38,24 +38,24 @@ function App() {
                 <Route path="/cryptoTechnologyCenter" element={<CryptoTechnologyCenter />} />
                 <Route path="/web" element={<Web />} />
                 <Route path="/projects" element={<Projects />} />
-                {/* <Route path="/ailabs" element={<AiLabs />} />
-                <Route path="/Data_collection" element={<Data_collection />} />
-                <Route path="/Data_preparation" element={<Data_preparation />} />
-                <Route path="/ModelEvaluation" element={<ModelEvaluation />} />
-                <Route path="/AiLabsList" element={<AiLabsList />} />
-                <Route path="/LearningLabs" element={<LearningLabs />} />
-                <Route path="/HumanSP" element={<HumanSP />} />
-                <Route path="/HistoricalClassification" element={<HistoricalClassification />} />
-                <Route path="/UrbanAg" element={<UrbanAg />} />
-                <Route path="/FoodProduction" element={<FoodProduction />} />
-                <Route path="/HumanOa" element={<HumanOa />} />
-                <Route path="/DnaTracing" element={<DnaTracing />} />
-                <Route path="/ArtificialRetrieval" element={<ArtificialRetrieval />} />
-                <Route path="/SkyLab" element={<SkyLab />} />
-                <Route path="/IoLab" element={<IoLab />} />
-                <Route path="/GLab" element={<GLab />} />
-                <Route path="/XLab" element={<XLab />} />
-                <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} /> */}
+                <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+                {/* <Route path="/ailabs" element={<AiLabs />} /> */}
+                {/* <Route path="/Data_collection" element={<Data_collection />} /> */}
+                {/* <Route path="/Data_preparation" element={<Data_preparation />} /> */}
+                {/* <Route path="/ModelEvaluation" element={<ModelEvaluation />} /> */}
+                {/* <Route path="/AiLabsList" element={<AiLabsList />} /> */}
+                {/* <Route path="/LearningLabs" element={<LearningLabs />} /> */}
+                {/* <Route path="/HumanSP" element={<HumanSP />} /> */}
+                {/* <Route path="/HistoricalClassification" element={<HistoricalClassification />} /> */}
+                {/* <Route path="/UrbanAg" element={<UrbanAg />} /> */}
+                {/* <Route path="/FoodProduction" element={<FoodProduction />} /> */}
+                {/* <Route path="/HumanOa" element={<HumanOa />} /> */}
+                {/* <Route path="/DnaTracing" element={<DnaTracing />} /> */}
+                {/* <Route path="/ArtificialRetrieval" element={<ArtificialRetrieval />} /> */}
+                {/* <Route path="/SkyLab" element={<SkyLab />} /> */}
+                {/* <Route path="/IoLab" element={<IoLab />} /> */}
+                {/* <Route path="/GLab" element={<GLab />} /> */}
+                {/* <Route path="/XLab" element={<XLab />} /> */}
             </Routes>
             <Footer />
         </>
