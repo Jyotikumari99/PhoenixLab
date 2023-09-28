@@ -1,0 +1,47 @@
+.ModelEvaluation .Header {
+    height: 40vh;
+    background-attachment: local;
+    background-image: url("../components/images/model_evaluation.jpg");
+    background-size: cover;
+    background-position: 12px;
+    color: #ffffff;
+}
+
+#edgecase {
+    background-image: url("../components/images/edgecase.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 2px 0px 10px #000000;
+    text-align: justify;
+    border-radius: 12px;
+    box-shadow: 2px 0 10px #000000;
+}
+
+#real-world {
+    background-image: url("../components/images/modal3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 2px 0px 10px #000000;
+    text-align: justify;
+    border-radius: 12px;
+    box-shadow: 2px 0 10px #000000;
+}
+
+#benchmarking {
+    background-image: url("../components/images/modal4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 4px 0px 7px #000000;
+    text-align: justify;
+    border-radius: 12px;
+    box-shadow: 2px 0 10px #000000;
+}
