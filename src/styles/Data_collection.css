@@ -15,7 +15,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 50vh;
     color: #ffffff;
     font-weight: 500;
     text-shadow: 2px 0px 5px #000000;
@@ -30,7 +29,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 60vh;
     color: #ffffff;
     font-weight: 500;
     text-shadow: 2px 0px 5px #000000;
@@ -44,7 +42,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 60vh;
     color: #ffffff;
     font-weight: 500;
     text-shadow: 2px 0px 5px #000000;
@@ -60,7 +57,6 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 55vh;
     color: #ffffff;
     font-weight: 500;
     text-shadow: 2px 0px 5px #000000;

@@ -8,9 +8,9 @@ import CryptoTechnologyCenter from "./components/pages/CryptoTechnologyCenter";
 import Web from "./components/pages/Web";
 import Projects from "./components/pages/Projects";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
-import Data_collection from "./components/pages/Data_collection";
+import DataCollection from "./components/pages/Data_collection";
+import DataPreparation from "./components/pages/Data_preparation";
 // import AiLabs from "./components/pages/AiLabs";
-// import Data_preparation from "./components/pages/Data_preparation";
 // import ModelEvaluation from "./components/pages/ModelEvaluation";
 // import AiLabsList from "./components/pages/AiLabsList";
 // import LearningLabs from "./components/pages/LearningLabs";
@@ -39,9 +39,9 @@ function App() {
                 <Route path="/web" element={<Web />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
-                <Route path="/dataCollection" element={<Data_collection />} />
+                <Route path="/dataCollection" element={<DataCollection />} />
+                <Route path="/dataPreparation" element={<DataPreparation />} />
                 {/* <Route path="/ailabs" element={<AiLabs />} /> */}
-                {/* <Route path="/Data_preparation" element={<Data_preparation />} /> */}
                 {/* <Route path="/ModelEvaluation" element={<ModelEvaluation />} /> */}
                 {/* <Route path="/AiLabsList" element={<AiLabsList />} /> */}
                 {/* <Route path="/LearningLabs" element={<LearningLabs />} /> */}
