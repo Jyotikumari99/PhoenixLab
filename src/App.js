@@ -4,11 +4,11 @@ import Footer from "./components/Helpers/Footer";
 import Home from "./components/pages/Home";
 import Vision from "./components/pages/Vision";
 import Art from "./components/pages/Art";
+import CryptoTechnologyCenter from "./components/pages/CryptoTechnologyCenter";
 // import AiLabs from "./components/pages/AiLabs";
 // import Data_collection from "./components/pages/Data_collection";
 // import Data_preparation from "./components/pages/Data_preparation";
 // import ModelEvaluation from "./components/pages/ModelEvaluation";
-// import CryptoTechnologyCenter from "./components/pages/CryptoTechnologyCenter";
 // import AiLabsList from "./components/pages/AiLabsList";
 // import LearningLabs from "./components/pages/LearningLabs";
 // import HumanSP from "./components/pages/HumanSP";
@@ -33,11 +33,11 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/vision" element={<Vision />} />
                 <Route path="/art" element={<Art />} />
+                <Route path="/cryptoTechnologyCenter" element={<CryptoTechnologyCenter />} />
                 {/* <Route path="/ailabs" element={<AiLabs />} />
                 <Route path="/Data_collection" element={<Data_collection />} />
                 <Route path="/Data_preparation" element={<Data_preparation />} />
                 <Route path="/ModelEvaluation" element={<ModelEvaluation />} />
-                <Route path="/CryptoTechnologyCenter" element={<CryptoTechnologyCenter />} />
                 <Route path="/AiLabsList" element={<AiLabsList />} />
                 <Route path="/LearningLabs" element={<LearningLabs />} />
                 <Route path="/HumanSP" element={<HumanSP />} />
