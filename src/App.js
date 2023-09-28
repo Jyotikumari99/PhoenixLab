@@ -5,6 +5,8 @@ import Home from "./components/pages/Home";
 import Vision from "./components/pages/Vision";
 import Art from "./components/pages/Art";
 import CryptoTechnologyCenter from "./components/pages/CryptoTechnologyCenter";
+import Web from "./components/pages/Web";
+import Projects from "./components/pages/Projects";
 // import AiLabs from "./components/pages/AiLabs";
 // import Data_collection from "./components/pages/Data_collection";
 // import Data_preparation from "./components/pages/Data_preparation";
@@ -34,6 +36,8 @@ function App() {
                 <Route path="/vision" element={<Vision />} />
                 <Route path="/art" element={<Art />} />
                 <Route path="/cryptoTechnologyCenter" element={<CryptoTechnologyCenter />} />
+                <Route path="/web" element={<Web />} />
+                <Route path="/projects" element={<Projects />} />
                 {/* <Route path="/ailabs" element={<AiLabs />} />
                 <Route path="/Data_collection" element={<Data_collection />} />
                 <Route path="/Data_preparation" element={<Data_preparation />} />

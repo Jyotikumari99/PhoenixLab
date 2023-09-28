@@ -1,5 +1,4 @@
 import "../../styles/CryptoTechnologyCenter.css";
-import Img from "../images/pexels-tima-miroshnichenko-7567532.jpg";
 const CryptoTechnologyCenter = () => {
     return (
         <div className="Crypto">

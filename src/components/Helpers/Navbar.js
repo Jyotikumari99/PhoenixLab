@@ -71,7 +71,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <li className="nav-item px-5 py-2 p-md-0 border border-top-0 border-left-0 border-right-0">
-                            <a className="text-white fs-5" href="/portfolio">
+                            <a className="text-white fs-5" href="/projects">
                                 Projects
                             </a>
                         </li>
