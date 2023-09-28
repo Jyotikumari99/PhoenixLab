@@ -14,7 +14,7 @@
 }
 .Vision main {
     background-color: #fffff0;
-    height: 50vh;
+    margin: 100px 0;
     width: 100%;
 }
 .Vision main div {
@@ -25,4 +25,21 @@
     font-size: 1.1rem;
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    .Vision main {
+        margin: 20px 0;
+    }
+    .Vision main p {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .Vision main {
+        margin: 60px 0;
+    }
+    .Vision main p {
+        font-size: 1rem;
+    }
 }

@@ -3,8 +3,8 @@ import Navbar from "./components/Helpers/Navbar";
 import Footer from "./components/Helpers/Footer";
 import Home from "./components/pages/Home";
 import Vision from "./components/pages/Vision";
+import Art from "./components/pages/Art";
 // import AiLabs from "./components/pages/AiLabs";
-// import Art from "./components/pages/Art";
 // import Data_collection from "./components/pages/Data_collection";
 // import Data_preparation from "./components/pages/Data_preparation";
 // import ModelEvaluation from "./components/pages/ModelEvaluation";
@@ -32,8 +32,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/vision" element={<Vision />} />
+                <Route path="/art" element={<Art />} />
                 {/* <Route path="/ailabs" element={<AiLabs />} />
-                <Route path="/Art" element={<Art />} />
                 <Route path="/Data_collection" element={<Data_collection />} />
                 <Route path="/Data_preparation" element={<Data_preparation />} />
                 <Route path="/ModelEvaluation" element={<ModelEvaluation />} />
