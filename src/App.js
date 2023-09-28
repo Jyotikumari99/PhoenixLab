@@ -8,8 +8,8 @@ import CryptoTechnologyCenter from "./components/pages/CryptoTechnologyCenter";
 import Web from "./components/pages/Web";
 import Projects from "./components/pages/Projects";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
+import Data_collection from "./components/pages/Data_collection";
 // import AiLabs from "./components/pages/AiLabs";
-// import Data_collection from "./components/pages/Data_collection";
 // import Data_preparation from "./components/pages/Data_preparation";
 // import ModelEvaluation from "./components/pages/ModelEvaluation";
 // import AiLabsList from "./components/pages/AiLabsList";
@@ -39,8 +39,8 @@ function App() {
                 <Route path="/web" element={<Web />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+                <Route path="/dataCollection" element={<Data_collection />} />
                 {/* <Route path="/ailabs" element={<AiLabs />} /> */}
-                {/* <Route path="/Data_collection" element={<Data_collection />} /> */}
                 {/* <Route path="/Data_preparation" element={<Data_preparation />} /> */}
                 {/* <Route path="/ModelEvaluation" element={<ModelEvaluation />} /> */}
                 {/* <Route path="/AiLabsList" element={<AiLabsList />} /> */}
