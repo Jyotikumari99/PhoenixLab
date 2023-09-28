@@ -1,29 +1,41 @@
-.home {
-    font-size: 2rem;
-    color: red;
+.backLayer {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio, adjust as needed */
+    overflow: hidden;
+    z-index: -1;
 }
 
-.hero .cont {
+.backLayer video {
     position: absolute;
-    top: 17rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+}
+
+.frontLayer {
+    z-index: 1;
+    position: absolute;
+    top: 30%;
     text-align: center;
     color: white;
 }
-.hero .cont p {
-    margin: auto;
-    padding: 4rem 8rem;
-    font-size: 1.5rem;
-    margin-top: -2rem;
+.frontLayer p {
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 0 auto 2rem auto;
 }
 
-.contain .vb {
-    width: 100%;
-    height: 10%;
+@media screen and (max-width: 576px) {
+    .frontLayer p {
+        width: 95%;
+    }
 }
-
-.glowing-text {
-    font-size: 4rem;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 0 10px #fff, 0 0 10px #c6c329;
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .frontLayer p {
+        width: 80%;
+    }
 }

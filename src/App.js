@@ -1,10 +1,11 @@
 import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Helpers/Navbar";
 import Home from "./components/pages/Home";
+import Footer from "./components/Helpers/Footer";
 // import AiLabs from "./components/pages/AiLabs";
 // import Art from "./components/pages/Art";
 // import Data_collection from "./components/pages/Data_collection";
 // import Data_preparation from "./components/pages/Data_preparation";
-import Footer from "./components/Helpers/Footer";
 // import Vision from "./components/pages/Vision";
 // import ModelEvaluation from "./components/pages/ModelEvaluation";
 // import CryptoTechnologyCenter from "./components/pages/CryptoTechnologyCenter";
@@ -23,14 +24,13 @@ import Footer from "./components/Helpers/Footer";
 // import XLab from "./components/pages/XLab";
 // import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import "./styles/App.css";
-import Navbar from "./components/Helpers/Navbar";
 
 function App() {
     return (
         <>
             <Navbar />
             <Routes>
-                {/* <Route path="/" element={<Home />} /> */}
+                <Route path="/" element={<Home />} />
                 {/* <Route path="/ailabs" element={<AiLabs />} />
                 <Route path="/Art" element={<Art />} />
                 <Route path="/Data_collection" element={<Data_collection />} />
