@@ -5,7 +5,7 @@ import "../../styles/Navbar.css";
 const Navbar = () => {
     return (
         <div className="Navbar ">
-            <nav className="navbar  navbar-expand-lg fixed-top " style={{ backgroundColor: "rgba(0,0,0,0.8)" }}>
+            <nav className="navbar  navbar-expand-lg fixed-top " style={{ backgroundColor: "rgba(0,0,60,0.5)" }}>
                 <div className="w-100 d-flex">
                     <div className="w-50 d-flex align-items-center justify-content-start">
                         <img src={Logo} className="Logo d-none d-sm-block" alt="Logo of Company" />
@@ -37,7 +37,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li className="nav-item px-5 py-2 p-md-0 border border-top-0 border-left-0 border-right-0">
-                            <a className="text-white fs-5" href="/Vision">
+                            <a className="text-white fs-5" href="/vision">
                                 Vision
                             </a>
                         </li>

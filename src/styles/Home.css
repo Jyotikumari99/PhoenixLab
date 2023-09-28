@@ -32,10 +32,12 @@
 @media screen and (max-width: 576px) {
     .frontLayer p {
         width: 95%;
+        font-size: 1rem;
     }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
     .frontLayer p {
+        font-size: 1.1rem;
         width: 80%;
     }
 }

@@ -1,0 +1,28 @@
+.Vision .Heading {
+    height: 50vh;
+    background-image: url("../components/images/pexels-kampus-production-6248988.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Vision .Heading h1 {
+    color: #8490ff;
+    text-shadow: 2px 3px 6px rgb(47, 54, 121);
+    font-size: 6rem;
+}
+.Vision main {
+    background-color: #fffff0;
+    height: 50vh;
+    width: 100%;
+}
+.Vision main div {
+    height: 100%;
+}
+.Vision main p {
+    height: 100%;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
