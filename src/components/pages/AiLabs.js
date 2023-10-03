@@ -1,125 +1,86 @@
-// import "../styles/Style.css";
-// import "../styles/Ailabs.css";
-// import { useState } from "react";
-// const AiLabs = () => {
-//   const formSubmited = (e) => {
-//     e.preventDefault();
-//     // Your logic for handling form submission
-//   };
+import { useState } from "react";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import "../../styles/Ailabs.css";
+const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: 400,
+    bgcolor: "background.paper",
+    boxShadow: 24,
+    p: 4,
+    borderRadius: "10px",
+};
+const AiLabs = () => {
+    // Login Registration Modal States
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
-//   const enrollNewUser = () => {
-//     // Your logic for enrolling a new user
-//   };
+    const formSubmit = (e) => {
+        e.preventDefault();
+        // Your logic for handling form submission
+    };
 
-//   const authenticateUser = () => {
-//     // Your logic for authenticating a user
-//   };
-//   return (
-//     <div>
-//       <div className="contain">
-//         <nav className="navbar navbar-expand-lg navbar-light bg-ligh fixed-top">
-//           <div className="container-fluid">
-//             <img src="/images/logo.png" alt="" />
-//             <a className="navbar-brand" href="#">
-//               Phoenix Labs
-//             </a>
+    const enrollNewUser = () => {
+        // Your logic for enrolling a new user
+    };
 
-//             <div
-//               className="collapse navbar-collapse"
-//               id="navbarSupportedContent"
-//             >
-//               <ul className="navbar-nav ms-auto mb-2 mb-lg">
-//                 <li className="nav-item">
-//                   <a className="nav-link active" aria-current="page" href="/">
-//                     Home
-//                   </a>
-//                 </li>
-
-//                 <li className="nav-item">
-//                   <a
-//                     className="nav-link active"
-//                     aria-current="page"
-//                     href="/art.html"
-//                   >
-//                     Back
-//                   </a>
-//                 </li>
-//               </ul>
-//             </div>
-//           </div>
-//         </nav>
-//         <section className="art d-flex justify-content-center w-100">
-//           <h1 className="w-75 text-center m-auto">AI Labs</h1>
-//         </section>
-//       </div>
-//       <main className="container">
-//         <div className="row">
-//           <div style={{ border: "1px solid #000" }} className="p-4">
-//             <p className="text-justify m-auto fs-5">
-//               Welcome to our Artificial Intelligence Labs. It is here that we
-//               research and deploy complex workflows, algorithms, and projects
-//               that can and will change our future. Our AI Labs Platform consists
-//               of three different laboratories that were created to focus on
-//               real-world problems that require real-world solutions.
-//             </p>
-//             <div>
-//               <button type="button" className="btn btn-primary btn-lg">
-//                 <a
-//                   style={{ color: "aliceblue", textDecoration: "none" }}
-//                   href="/datac.html"
-//                 >
-//                   Learn more
-//                 </a>
-//               </button>
-//             </div>
-//             <div className="form-container" onSubmit={formSubmited}>
-//               <div id="form-heading" style={{ display: "none" }}>
-//                 <h3>Login or Register</h3>
-//               </div>
-//               <form id="user-form">
-//                 <h1>Welcome to Facial Recognition</h1>
-//                 <label htmlFor="name">Name:</label>
-//                 <input type="text" id="name" name="name" required />
-//                 <br />
-//                 <label htmlFor="email">Email:</label>
-//                 <input type="email" id="email" name="email" required />
-//                 <br />
-//                 <button type="submit" id="continue-btn">
-//                   Continue
-//                 </button>
-//               </form>
-//             </div>
-//             <div
-//               className="action-buttons"
-//               style={{
-//                 display: "none",
-//                 width: "50%",
-//                 margin: "auto",
-//                 justifyContent: "space-around",
-//                 alignItems: "center",
-//               }}
-//             >
-//               <button
-//                 id="login-btn"
-//                 onClick={enrollNewUser}
-//                 className="btn btn-primary btn-lg"
-//               >
-//                 Login
-//               </button>
-//               <button
-//                 id="register-btn"
-//                 onClick={authenticateUser}
-//                 className="btn btn-primary btn-lg"
-//               >
-//                 Register
-//               </button>
-//             </div>
-//           </div>
-//         </div>
-//         <div id="faceio-modal"></div>
-//       </main>
-//     </div>
-//   );
+    const authenticateUser = () => {
+        // Your logic for authenticating a user
+    };
+    return (
+        <div className="aiLabs">
+            <div className="Header d-flex justify-content-center w-100">
+                <h1 className="w-75 text-center m-auto">AI Labs</h1>
+            </div>
+            <main className="container">
+                <div className="row py-4 my-1">
+                    <div className="text-center">
+                        <p className="text-justify m-auto fs-5">
+                            Welcome to our Artificial Intelligence Labs. It is here that we research and deploy complex workflows, algorithms, and projects that
+                            can and will change our future. Our AI Labs Platform consists of three different laboratories that were created to focus on
+                            real-world problems that require real-world solutions.
+                        </p>
+                        <a className="btn btn-secondary btn-sm mt-2 fw-bold" style={{ textDecoration: "none" }} href="/dataCollection">
+                            Learn more
+                        </a>
+                    </div>
+                    <div className="card my-4 d-flex justify-content-center align-items-center">
+                        <h2>You must login to access all features.</h2>
+                        <button className="w-75 " onClick={handleOpen}>
+                            Login / Register
+                        </button>
+                    </div>
+                    <div>
+                        <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+                            <Box sx={style}>
+                                <form onSubmit={formSubmit}>
+                                    <h4>Welcome to Facial Recognition</h4>
+                                    <div>
+                                        <label htmlFor="name">Name:</label>
+                                        <input type="text" id="name" name="name" required />
+                                    </div>
+                                    <div>
+                                        <label htmlFor="email">Email:</label>
+                                        <input type="email" id="email" name="email" required />
+                                    </div>
+                                    <button className="btn-sm" type="submit">
+                                        Continue
+                                    </button>
+                                </form>
+                            </Box>
+                        </Modal>
+                    </div>
+                </div>
+                <div id="faceio-modal"></div>
+            </main>
+        </div>
+    );
+};
+export default AiLabs;
 //   const [userInfo, setUserInfo] = useState(
 //     JSON.parse(localStorage.getItem("userInfo")) || null
 //   );
@@ -203,5 +164,3 @@
 //     </div>
 //   );
 // };
-
-// export default AiLabs;

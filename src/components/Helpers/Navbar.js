@@ -5,7 +5,7 @@ import "../../styles/Navbar.css";
 const Navbar = () => {
     return (
         <div className="Navbar ">
-            <nav className="navbar  navbar-expand-lg fixed-top " style={{ backgroundColor: "rgba(0,0,60,0.5)" }}>
+            <nav className="navbar  navbar-expand-lg fixed-top " style={{ backgroundColor: "rgba(0,0,0,0.6)" }}>
                 <div className="w-100 d-flex">
                     <div className="w-50 d-flex align-items-center justify-content-start">
                         <img src={Logo} className="Logo d-none d-sm-block" alt="Logo of Company" />

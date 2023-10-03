@@ -11,7 +11,7 @@ import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import DataCollection from "./components/pages/Data_collection";
 import DataPreparation from "./components/pages/Data_preparation";
 import ModelEvaluation from "./components/pages/ModelEvaluation";
-// import AiLabs from "./components/pages/AiLabs";
+import AiLabs from "./components/pages/AiLabs";
 // import AiLabsList from "./components/pages/AiLabsList";
 // import LearningLabs from "./components/pages/LearningLabs";
 // import HumanSP from "./components/pages/HumanSP";
@@ -42,7 +42,7 @@ function App() {
                 <Route path="/dataCollection" element={<DataCollection />} />
                 <Route path="/dataPreparation" element={<DataPreparation />} />
                 <Route path="/modelEvaluation" element={<ModelEvaluation />} />
-                {/* <Route path="/ailabs" element={<AiLabs />} /> */}
+                <Route path="/ailabs" element={<AiLabs />} />
                 {/* <Route path="/AiLabsList" element={<AiLabsList />} /> */}
                 {/* <Route path="/LearningLabs" element={<LearningLabs />} /> */}
                 {/* <Route path="/HumanSP" element={<HumanSP />} /> */}
