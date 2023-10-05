@@ -1,0 +1,15 @@
+.aiRetrieval .header section {
+    height: 45vh;
+    background-attachment: local;
+    background-image: url("../components/images/artirete.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+}
+.aiRetrieval a {
+    color: #000000b9;
+}
+.aiRetrieval a:hover {
+    color: #000000 !important;
+}

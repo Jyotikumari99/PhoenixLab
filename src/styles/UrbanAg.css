@@ -1,0 +1,15 @@
+.urbanAg .header section {
+    height: 40vh;
+    background-attachment: local;
+    background-image: url("../components/images/urban1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #ffffff;
+}
+.urbanAg a {
+    color: #000000b9;
+}
+.urbanAg a:hover {
+    color: #000000 !important;
+}

@@ -1,9 +1,10 @@
-.skyLab .header section {
+.xLab .header section {
     height: 25rem;
     background-attachment: local;
-    background-image: url("../components/images/kl.jpeg");
+    background-image: url("../components/images/xlab.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     color: #ffffff;
     background-attachment: fixed;

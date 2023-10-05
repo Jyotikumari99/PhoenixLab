@@ -1,0 +1,9 @@
+.ioLab .header section {
+    height: 25rem;
+    background-attachment: local;
+    background-image: url("../components/images/io.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    color: #ffffff;
+}

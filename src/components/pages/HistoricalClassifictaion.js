@@ -17,19 +17,19 @@ const historicalclassification = () => {
             <div className=" card m-5 p-4">
                 <ul>
                     <li>
-                        <a href="humanownershiparchives.html">Human Ownership Archives</a>
+                        <a href="/humanOA">Human Ownership Archives</a>
                     </li>
                     <li>
-                        <a href="DnaTracing">DNA Tracing</a>
+                        <a href="/dnaTracing">DNA Tracing</a>
                     </li>
                     <li>
-                        <a href="ArtificialRetrieval">Artificial Retrieval</a>
+                        <a href="/artificialRetrieval">Artificial Retrieval</a>
                     </li>
                     <li>
-                        <a href="FoodProduction">Food Production & Food Security</a>
+                        <a href="/foodProduction">Food Production & Food Security</a>
                     </li>
                     <li>
-                        <a href="UrbanAg">Urban Ag</a>
+                        <a href="/urbanAg">Urban Ag</a>
                     </li>
                 </ul>
             </div>

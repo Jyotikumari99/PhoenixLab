@@ -1,0 +1,15 @@
+.foodProduction .header section {
+    height: 40vh;
+    background-attachment: local;
+    background-image: url("../components/images/artirete.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #ffffff;
+}
+.foodProduction a {
+    color: #000000b9;
+}
+.foodProduction a:hover {
+    color: #000000 !important;
+}
