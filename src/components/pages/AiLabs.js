@@ -2,11 +2,17 @@ import { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import "../../styles/Ailabs.css";
+import faceIO from "@faceio/fiojs";
+import { message } from "antd";
+import { useNavigate } from "react-router-dom";
+
+const faceio = new faceIO(process.env.REACT_APP_FACEIO_KEY);
 const style = {
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
+    height: 330,
     width: 400,
     bgcolor: "background.paper",
     boxShadow: 24,
@@ -14,23 +20,62 @@ const style = {
     borderRadius: "10px",
 };
 const AiLabs = () => {
+    const navigate = useNavigate();
+    // show form or login buttons
+    const [showLoginModel, setShowLoginModel] = useState(false);
+    // User Details
+    const [userName, setUserName] = useState("");
+    const [userEmail, setUserEmail] = useState("");
     // Login Registration Modal States
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-
     const formSubmit = (e) => {
         e.preventDefault();
-        // Your logic for handling form submission
+        setShowLoginModel(true);
+        setUserName(e.target.name.value);
+        setUserEmail(e.target.email.value);
     };
 
-    const enrollNewUser = () => {
-        // Your logic for enrolling a new user
-    };
+    function enrollNewUser(e) {
+        e.preventDefault();
+        handleClose();
+        faceio
+            .enroll({
+                locale: "auto",
+                userConsent: false,
+                payload: {
+                    whoami: `{${userName}}`,
+                    email: `${userEmail}`,
+                },
+            })
+            .then(async () => {
+                handleOpen();
+                message.success("User Successfully Enrolled! Now you can login.");
+                faceio.restartSession();
+            })
+            .catch(async (errCode) => {
+                faceio.restartSession();
+                message.error("Registration failed: " + errCode);
+            });
+    }
 
-    const authenticateUser = () => {
-        // Your logic for authenticating a user
-    };
+    function authenticateUser(e) {
+        e.preventDefault();
+        handleClose();
+        faceio
+            .authenticate({
+                locale: "auto",
+            })
+            .then(() => {
+                localStorage.setItem("user_phoenixlab", userEmail);
+                navigate("/aiLabsList");
+            })
+            .catch((code) => {
+                message.error("Authentication failed: " + code);
+                faceio.restartSession();
+            });
+    }
     return (
         <div className="aiLabs">
             <div className="Header d-flex justify-content-center w-100">
@@ -48,119 +93,57 @@ const AiLabs = () => {
                             Learn more
                         </a>
                     </div>
-                    <div className="card my-4 d-flex justify-content-center align-items-center">
-                        <h2>You must login to access all features.</h2>
-                        <button className="w-75 " onClick={handleOpen}>
+                    <div className="card shadow-lg my-4 p-2 d-flex justify-content-center align-items-center">
+                        <h2 className="text-center">You must login to access all features.</h2>
+                        <button className="w-75 btn btn-primary btn-lg" onClick={handleOpen}>
                             Login / Register
                         </button>
                     </div>
                     <div>
+                        <div id="faceio-modal"></div>
                         <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                             <Box sx={style}>
-                                <form onSubmit={formSubmit}>
-                                    <h4>Welcome to Facial Recognition</h4>
-                                    <div>
-                                        <label htmlFor="name">Name:</label>
-                                        <input type="text" id="name" name="name" required />
+                                {showLoginModel ? (
+                                    <div className="h-100 d-flex flex-column justify-content-between ">
+                                        <div className="text-center card p-1">
+                                            <h4>Do you already have account?</h4>
+                                            <button className="btn btn-primary btn-sm" onClick={authenticateUser}>
+                                                Login
+                                            </button>
+                                        </div>
+                                        <div className="text-center card p-1">
+                                            <h4>New User?</h4>
+                                            <button className="btn btn-primary btn-sm" onClick={enrollNewUser}>
+                                                Register
+                                            </button>
+                                        </div>
+                                        <div className="d-flex justify-content-around">
+                                            <button className="btn btn-primary btn-sm">Back</button>
+                                            <button className="btn btn-primary btn-sm">Cancel</button>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <label htmlFor="email">Email:</label>
-                                        <input type="email" id="email" name="email" required />
-                                    </div>
-                                    <button className="btn-sm" type="submit">
-                                        Continue
-                                    </button>
-                                </form>
+                                ) : (
+                                    <form onSubmit={formSubmit}>
+                                        <h4>Welcome to Facial Recognition</h4>
+                                        <div>
+                                            <label htmlFor="name">Name:</label>
+                                            <input type="text" id="name" name="name" required />
+                                        </div>
+                                        <div>
+                                            <label htmlFor="email">Email:</label>
+                                            <input type="email" id="email" name="email" required />
+                                        </div>
+                                        <button className="btn btn-primary btn-sm" type="submit">
+                                            Continue
+                                        </button>
+                                    </form>
+                                )}
                             </Box>
                         </Modal>
                     </div>
                 </div>
-                <div id="faceio-modal"></div>
             </main>
         </div>
     );
 };
 export default AiLabs;
-//   const [userInfo, setUserInfo] = useState(
-//     JSON.parse(localStorage.getItem("userInfo")) || null
-//   );
-//   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
-//   const handleFormSubmit = (e) => {
-//     e.preventDefault();
-//     setIsFormSubmitted(true);
-//   };
-//   const handleLogin = () => {
-//     // Check if the user is already authenticated
-//     if (isAuthenticated()) {
-//       window.location.href = "ailabslist.html";
-//     } else {
-//       // Perform facial recognition
-//       faceio
-//         .authenticate({
-//           locale: "auto",
-//         })
-//         .then((userData) => {
-//           console.log("Success, user identified");
-//           console.log("Linked facial Id: " + userData.facialId);
-//           console.log("Payload: " + JSON.stringify(userData.payload));
-
-//           // Store user info in localStorage
-//           localStorage.setItem("userInfo", JSON.stringify(userData));
-//           setUserInfo(userData);
-
-//           // Redirect to success.html
-//           window.location.href = "ailabslist.html";
-//         })
-//         .catch((errCode) => {
-//           console.error("Authentication failed: " + errCode);
-//         });
-//     }
-//   };
-
-//   const handleRegister = () => {
-//     // Perform user registration
-//     faceio
-//       .enroll({
-//         locale: "auto",
-//         payload: {
-//           name: document.getElementById("name").value,
-//           email: document.getElementById("email").value,
-//         },
-//       })
-//       .then((userInfo) => {
-//         alert(
-//           `User Successfully Enrolled! Details:
-//           Unique Facial ID: ${userInfo.facialId}
-//           Enrollment Date: ${userInfo.timestamp}
-//           Gender: ${userInfo.details.gender}
-//           Age Approximation: ${userInfo.details.age}`
-//         );
-//         console.log(userInfo);
-//       })
-//       .catch((errCode) => {
-//         console.error("Registration failed: " + errCode);
-//       });
-//   };
-
-//   return (
-//     <div>
-//       <form id="user-form" onSubmit={handleFormSubmit}>
-//         {/* Your form elements go here */}
-//       </form>
-//       {isFormSubmitted ? (
-//         <div>
-//           <h1 id="form-heading">Form Heading</h1>
-//           <div className="action-buttons">
-//             <button id="login-btn" onClick={handleLogin}>
-//               Login
-//             </button>
-//             <button id="register-btn" onClick={handleRegister}>
-//               Register
-//             </button>
-//           </div>
-//         </div>
-//       ) : null}
-//     </div>
-//   );
-// };

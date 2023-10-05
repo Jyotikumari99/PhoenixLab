@@ -1,0 +1,16 @@
+.aiLabsList .header section {
+    height: 20rem;
+    background-attachment: local;
+    background-image: url("../components/images/ailabs.jpg");
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+.aiLabsList a {
+    text-decoration: none;
+    color: #000000b9;
+}
+.aiLabsList a:hover {
+    color: #000000 !important;
+}

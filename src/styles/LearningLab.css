@@ -1,0 +1,12 @@
+.learningLab .header section {
+    height: 35rem;
+    background-attachment: local;
+    background-image: url("../components/images/Ll1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #ffffff;
+}
+.learningLab .header section h1 {
+    text-shadow: 1px 1px 1px #000000;
+}
