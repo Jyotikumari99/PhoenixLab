@@ -1,0 +1,17 @@
+.dnaTracing .header section {
+    height: 25rem;
+    background-attachment: local;
+    background-image: url("../components/images/Dna.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: #ffffff;
+}
+
+.dnaTracing a {
+    color: #000000b9;
+}
+.dnaTracing a:hover {
+    color: #000000 !important;
+}

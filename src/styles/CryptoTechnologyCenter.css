@@ -1,0 +1,58 @@
+.Crypto .Header {
+    height: 60vh;
+    background-image: url("../components/images/pexels-alesia-kozik-6777570.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Crypto .Header h1 {
+    color: #eeeeee;
+    text-shadow: 2px 3px 6px black;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.Crypto .Header p {
+    text-shadow: 0px 1px 2px #000000;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+.Crypto main {
+    background-color: #eeeeee;
+}
+.Crypto main ul {
+    list-style: number;
+}
+.Crypto main ul li {
+    text-align: justify;
+}
+@media screen and (max-width: 576px) {
+    .Crypto .Header {
+        height: 80vh;
+    }
+    .Crypto .Header h1 {
+        font-size: 2rem;
+    }
+    .Crypto .Header p {
+        font-size: 1.3rem;
+        width: 90%;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .Crypto .Header {
+        height: 70vh;
+    }
+    .Crypto .Header h1 {
+        font-size: 3rem;
+    }
+    .Crypto .Header p {
+        font-size: 1.4rem;
+        width: 80%;
+    }
+}

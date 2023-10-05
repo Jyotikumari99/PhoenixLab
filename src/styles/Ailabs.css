@@ -1,0 +1,24 @@
+.aiLabs .Header {
+    height: 42vh;
+    background-image: url("../components/images/ailabs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.aiLabs label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.aiLabs input[type="text"],
+.aiLabs input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

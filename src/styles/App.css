@@ -1,0 +1,12 @@
+body,
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a {
+    text-decoration: none !important;
+}
+a:hover {
+    color: rgba(255, 255, 255, 0.85) !important;
+}

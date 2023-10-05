@@ -1,0 +1,66 @@
+.dataCollection {
+    background-color: #d5d5d5;
+}
+
+.dataCollection .Header {
+    height: 20rem;
+    background-attachment: local;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../components/images/data_collection.jpg");
+}
+
+#imageCollection {
+    background-image: url("../components/images/datac.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 2px 0px 5px #000000;
+    text-align: justify;
+    border-radius: 12px;
+    box-shadow: 2px 0 10px #000000;
+    z-index: -1;
+}
+
+#preLabelled {
+    background-image: url("../components/images/datac2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 2px 0px 5px #000000;
+    text-align: justify;
+    border-radius: 12px;
+    box-shadow: 2px 0 10px #000000;
+}
+
+#pointOfInterest {
+    background-image: url("../components/images/datac3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 2px 0px 5px #000000;
+    text-align: justify;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 2px 0 10px #000000;
+}
+
+#syntheticData {
+    background-image: url("../components/images/datac.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 2px 0px 5px #000000;
+    text-align: justify;
+    border-radius: 12px;
+    box-shadow: 2px 0 10px #000000;
+}

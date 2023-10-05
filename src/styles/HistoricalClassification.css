@@ -1,0 +1,15 @@
+.historicalC .header section {
+    height: 25rem;
+    background-attachment: local;
+    background-image: url("../components/images/hc.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #ffffff;
+}
+.historicalC a {
+    color: #000000b9;
+}
+.historicalC a:hover {
+    color: #000000 !important;
+}

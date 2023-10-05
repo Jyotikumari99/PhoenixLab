@@ -1,0 +1,10 @@
+.skyLab .header section {
+    height: 25rem;
+    background-attachment: local;
+    background-image: url("../components/images/kl.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #ffffff;
+    background-attachment: fixed;
+}

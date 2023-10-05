@@ -1,0 +1,17 @@
+.humanOA .header section {
+    height: 25rem;
+    background-attachment: local;
+    background-image: url("../components/images/hoa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+.humanOA a {
+    color: #000000b9;
+}
+.humanOA a:hover {
+    color: #000000 !important;
+}

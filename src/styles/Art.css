@@ -1,0 +1,69 @@
+.ART .header {
+    height: 70vh;
+    background-image: url("../components/images/artbackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ART .header h1 {
+    color: #eeeeee;
+    text-shadow: 2px 3px 6px black;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.ART .header p {
+    color: #eeeeee;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.ART main {
+    height: 60vh;
+}
+.ART main a {
+    color: #000000;
+}
+.ART main a:hover {
+    color: #3f3f3f !important;
+}
+.ART main .CoverImg {
+    width: 90%;
+}
+
+@media screen and (max-width: 576px) {
+    .ART .header {
+        height: 90vh;
+    }
+    .ART .header h1 {
+        font-size: 2rem;
+    }
+    .ART .header p {
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+    .ART main {
+        height: auto;
+    }
+    .ART main .CoverImg {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .ART .header {
+        height: 80vh;
+    }
+    .ART .header h1 {
+        font-size: 3rem;
+    }
+    .ART .header p {
+        font-size: 1.4rem;
+    }
+    .ART main .CoverImg {
+        width: 60%;
+    }
+}

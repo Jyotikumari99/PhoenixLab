@@ -1,0 +1,29 @@
+.Footer a {
+    color: rgba(192, 192, 192, 1);
+    display: block;
+}
+.Footer p {
+    margin: 0;
+    padding: 0;
+}
+.Footer .heading {
+    font-size: 2rem;
+}
+@media screen and (max-width: 767px) {
+    .Footer .heading {
+        font-size: 1rem;
+    }
+    .Footer .text,
+    .Footer a {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .Footer .heading {
+        font-size: 1.5rem;
+    }
+    .Footer .text,
+    .Footer a {
+        font-size: 0.9rem;
+    }
+}
